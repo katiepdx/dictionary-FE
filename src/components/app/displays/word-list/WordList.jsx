@@ -2,9 +2,9 @@ import React from 'react'
 import WordItem from '../word-item/WordItem'
 import PropTypes from 'prop-types'
 
-const WordList = (list) => {
-  return list.wordsList.map(word => (
-    <div key={Date.now()}>
+const WordList = ({ wordsList }) => {
+  return wordsList.map(word => (
+    <div key={word.id}>
       <WordItem {...word} />
     </div>
   ))

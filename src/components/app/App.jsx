@@ -1,5 +1,4 @@
 import React from 'react';
-import WordList from './displays/word-list/WordList';
 import {
   BrowserRouter as Router,
   Route,
@@ -8,6 +7,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import WordContainer from '../../container/WordContainer';
+import WordsListContainer from '../../container/WordsListContainer';
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
           />
           <Route
             exact path="/words"
-            component={WordList}
+            component={WordsListContainer}
           />
         </Switch>
       </Router>

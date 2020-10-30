@@ -27,13 +27,38 @@ export default class WordContainer extends Component {
       exampleSentence: this.state.exampleSentence,
       notes: this.state.notes
     })
+
+    // reset state - clear form
+    this.setState({
+      word: '',
+      wordLanguage: '',
+      wordTranslation: '',
+      wordDefinition: '',
+      exampleSentence: '',
+      notes: ''
+    })
   }
 
   render() {
+    const {
+      word,
+      wordLanguage,
+      wordTranslation,
+      wordDefinition,
+      exampleSentence,
+      notes,
+    } = this.state
+
     return (
       <div>
         <h1>Word Container</h1>
         <WordForm
+          word={word}
+          wordLanguage={wordLanguage}
+          wordTranslation={wordTranslation}
+          wordDefinition={wordDefinition}
+          exampleSentence={exampleSentence}
+          notes={notes}
           onChange={this.handleChange}
           onClick={this.handleClick} />
       </div>
