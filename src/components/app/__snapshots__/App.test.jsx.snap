@@ -3,7 +3,107 @@
 exports[`App component renders App 1`] = `
 <DocumentFragment>
   <h1>
-    Hello World
+    Welcome!
   </h1>
+  <nav>
+    <li>
+      <a
+        href="/"
+      >
+        Add Word
+      </a>
+    </li>
+    <li>
+      <a
+        href="/words"
+      >
+        Words List
+      </a>
+    </li>
+  </nav>
+  <div>
+    <h1>
+      Word Container
+    </h1>
+    <div
+      class="formPage"
+    >
+      <section
+        class="wordForm"
+      >
+        <h2>
+          Add a word!
+        </h2>
+        <label
+          for="word"
+        >
+          Word
+        </label>
+        <input
+          id="word"
+          name="word"
+          type="text"
+          value=""
+        />
+        <label
+          for="wordLanguage"
+        >
+          word language
+        </label>
+        <input
+          id="wordLanguage"
+          name="wordLanguage"
+          type="text"
+          value=""
+        />
+        <label
+          for="wordTranslation"
+        >
+          word translation
+        </label>
+        <input
+          id="wordTranslation"
+          name="wordTranslation"
+          type="text"
+          value=""
+        />
+        <label
+          for="wordDefinition"
+        >
+          word definition
+        </label>
+        <input
+          id="wordDefinition"
+          name="wordDefinition"
+          type="text"
+          value=""
+        />
+        <label
+          for="exampleSentence"
+        >
+          example sentence
+        </label>
+        <input
+          id="exampleSentence"
+          name="exampleSentence"
+          type="text"
+          value=""
+        />
+        <label
+          for="notes"
+        >
+          notes
+        </label>
+        <textarea
+          id="notes"
+          name="notes"
+          type="text"
+        />
+        <button>
+          Submit
+        </button>
+      </section>
+    </div>
+  </div>
 </DocumentFragment>
 `;
