@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WordList/> should render a list of words to the page 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <h1>
+        Word Item Page
+      </h1>
+      <p>
+        Word: Word 1
+      </p>
+      <p>
+        Language: English
+      </p>
+      <p>
+        Translation: word 1 translation
+      </p>
+      <p>
+        Definition: word 1 definition
+      </p>
+      <p>
+        Example Sentence: this is a cool word
+      </p>
+      <p>
+        Notes: I learned a new word!
+      </p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h1>
+        Word Item Page
+      </h1>
+      <p>
+        Word: Word 2
+      </p>
+      <p>
+        Language: English
+      </p>
+      <p>
+        Translation: word 2 translation
+      </p>
+      <p>
+        Definition: word 2 definition
+      </p>
+      <p>
+        Example Sentence: this is a cool word
+      </p>
+      <p>
+        Notes: I learned a new word!
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

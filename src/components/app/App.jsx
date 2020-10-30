@@ -1,5 +1,5 @@
 import React from 'react';
-import { WordList } from './displays/word-list/WordList';
+import WordList from './displays/word-list/WordList';
 import {
   BrowserRouter as Router,
   Route,
