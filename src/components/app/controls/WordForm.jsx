@@ -2,7 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './WordForm.css'
 
-const WordForm = ({ word, wordLanguage, wordTranslation, wordDefinition, exampleSentence, notes, onChange, onClick }) => {
+const WordForm = ({
+  word,
+  wordLanguage,
+  wordTranslation,
+  wordDefinition,
+  exampleSentence,
+  notes,
+  onChange,
+  onClick }) => {
   return (
     <div className={styles.formPage}>
       <section className={styles.wordForm}>
