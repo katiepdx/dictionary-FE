@@ -9,6 +9,7 @@ import styles from './App.css'
 import WordFormContainer from '../../container/WordFormContainer';
 import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
+import WordDetails from './displays/word-details/WordDetails';
 
 export default function App() {
   return (

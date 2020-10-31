@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import WordList from './WordList'
+import { MemoryRouter } from 'react-router-dom'
 
 const list = [
   {
@@ -22,7 +23,7 @@ const list = [
 
 describe('<WordList/>', () => {
   it('should render a list of words to the page', () => {
-    const { asFragment } = render(<WordList wordsList={list} />)
+    const { asFragment } = render(<MemoryRouter><WordList wordsList={list} /></MemoryRouter>)
 
     expect(asFragment()).toMatchSnapshot()
   })

@@ -1,16 +1,14 @@
 import React from 'react'
 import WordItem from '../word-item/WordItem'
 import PropTypes from 'prop-types'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const WordList = ({ wordsList }) => {
   return wordsList.map(word => (
     <div key={word.id}>
-      <Router>
-        <Link to={`/words/${word.id}`}>
-          <WordItem {...word} />
-        </Link>
-      </Router>
+      <Link to={`/words/${word.id}`}>
+        <WordItem {...word} />
+      </Link>
     </div>
   ))
 }

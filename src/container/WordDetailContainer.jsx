@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import WordDetails from '../components/app/displays/word-details/WordDetails'
+import { getWordById } from '../service/api-fetch'
 
 export default class WordDetailContainer extends Component {
   state = {
@@ -12,7 +13,7 @@ export default class WordDetailContainer extends Component {
   }
 
   async componentDidMount() {
-    const id = match.params.id
+    const id = this.props.match.params.id
 
     const response = await getWordById(id)
 
