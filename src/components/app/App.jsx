@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom'
 import styles from './App.css'
-import WordContainer from '../../container/WordContainer';
+import WordFormContainer from '../../container/WordFormContainer';
 import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
 
@@ -22,7 +22,7 @@ export default function App() {
         <Switch>
           <Route
             exact path="/"
-            component={WordContainer}
+            component={WordFormContainer}
           />
           <Route
             exact path="/words"

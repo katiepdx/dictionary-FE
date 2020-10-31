@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import WordForm from '../components/app/controls/WordForm'
 import { createWord } from '../service/api-fetch';
 
-export default class WordContainer extends Component {
+export default class WordFormContainer extends Component {
   state = {
     word: '',
     wordLanguage: '',
