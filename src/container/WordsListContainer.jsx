@@ -17,12 +17,15 @@ export default class WordsListContainer extends Component {
   render() {
     const { wordsList } = this.state
     return (
-      <div className={styles.wordsList}>
-        {wordsList.length >= 1
-          ?
-          <WordList wordsList={wordsList} />
-          :
-          <h1>Oops! Please add a word to your list first....</h1>}
+      <div>
+        <h1>My Word List</h1>
+        <section className={styles.wordsList}>
+          {wordsList.length >= 1
+            ?
+            <WordList wordsList={wordsList} />
+            :
+            <h1>Oops! Please add a word to your list first....</h1>}
+        </section>
       </div>
     )
   }

@@ -23,3 +23,13 @@ export const getAllWords = async () => {
 
   return apiRes
 }
+
+export const getWordById = async (id) => {
+  const res = await fetch(`http://localhost:7890/api/v1/words/${id}`)
+
+  if (!res.ok) throw ('Failed to fetch from API')
+
+  const apiRes = await res.json()
+
+  return apiRes
+}

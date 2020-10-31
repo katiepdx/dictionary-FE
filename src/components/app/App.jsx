@@ -5,18 +5,18 @@ import {
   Link,
   Switch
 } from 'react-router-dom'
-import './App.css'
+import styles from './App.css'
 import WordContainer from '../../container/WordContainer';
 import WordsListContainer from '../../container/WordsListContainer';
+import WordDetailContainer from '../../container/WordDetailContainer';
 
 export default function App() {
   return (
     <>
-      <h1>Welcome!</h1>
       <Router>
-        <nav>
-          <li><Link to="/">Add Word</Link></li>
-          <li><Link to="/words">Words List</Link></li>
+        <nav className={styles.nav}>
+          <li><Link to="/" className={styles.links}>Add Word</Link></li>
+          <li><Link to="/words" className={styles.links}>Words List</Link></li>
         </nav>
 
         <Switch>
@@ -27,6 +27,10 @@ export default function App() {
           <Route
             exact path="/words"
             component={WordsListContainer}
+          />
+          <Route
+            exact path="/words/:id"
+            component={WordDetailContainer}
           />
         </Switch>
       </Router>

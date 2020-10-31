@@ -1,4 +1,4 @@
-nav {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -8,15 +8,16 @@ nav {
   padding: 1.7rem 1.2rem;
 }
 
-a {
+.links {
   color: wheat;
   text-decoration: none;
 }
 
-a:hover {
-  background-color: white;
+.links:hover {
+  background-color: whitesmoke;
   padding: 1.7rem 1.2rem;
   transition: .6s;
+  color: rgba(36, 36, 22, 0.74);
 }
 
 h1 {

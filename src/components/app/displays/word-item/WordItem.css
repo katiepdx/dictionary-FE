@@ -1,3 +1,19 @@
 .label {
   font-weight: bold;
 }
+
+.wordItem {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.wordItem:hover {
+  background-color: rgba(245, 222, 179, 0.637);
+  transition: .6s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
