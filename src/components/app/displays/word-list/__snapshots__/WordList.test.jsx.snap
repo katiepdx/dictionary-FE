@@ -2,53 +2,105 @@
 
 exports[`<WordList/> should render a list of words to the page 1`] = `
 <DocumentFragment>
-  <div>
-    <div>
-      <h1>
-        Word Item Page
-      </h1>
-      <p>
+  <div
+    class="wordItem"
+  >
+    <div
+      class="wordItem"
+    >
+      <h4>
         Word: Word 1
+      </h4>
+      <p
+        class="label"
+      >
+        Language
       </p>
       <p>
-        Language: English
+         English
+      </p>
+      <p
+        class="label"
+      >
+        Translation
       </p>
       <p>
-        Translation: word 1 translation
+         word 1 translation
+      </p>
+      <p
+        class="label"
+      >
+        Definition
       </p>
       <p>
-        Definition: word 1 definition
+         word 1 definition
+      </p>
+      <p
+        class="label"
+      >
+        Example Sentence
       </p>
       <p>
-        Example Sentence: this is a cool word
+         this is a cool word
+      </p>
+      <p
+        class="label"
+      >
+        Notes
       </p>
       <p>
-        Notes: I learned a new word!
+         I learned a new word!
       </p>
     </div>
   </div>
-  <div>
-    <div>
-      <h1>
-        Word Item Page
-      </h1>
-      <p>
+  <div
+    class="wordItem"
+  >
+    <div
+      class="wordItem"
+    >
+      <h4>
         Word: Word 2
+      </h4>
+      <p
+        class="label"
+      >
+        Language
       </p>
       <p>
-        Language: English
+         English
+      </p>
+      <p
+        class="label"
+      >
+        Translation
       </p>
       <p>
-        Translation: word 2 translation
+         word 2 translation
+      </p>
+      <p
+        class="label"
+      >
+        Definition
       </p>
       <p>
-        Definition: word 2 definition
+         word 2 definition
+      </p>
+      <p
+        class="label"
+      >
+        Example Sentence
       </p>
       <p>
-        Example Sentence: this is a cool word
+         this is a cool word
+      </p>
+      <p
+        class="label"
+      >
+        Notes
       </p>
       <p>
-        Notes: I learned a new word!
+         I learned a new word!
       </p>
     </div>
   </div>

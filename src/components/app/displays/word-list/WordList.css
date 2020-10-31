@@ -1,0 +1,10 @@
+.wordItem {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.wordItem:hover {
+  background-color: wheat;
+  transition: .6s;
+}

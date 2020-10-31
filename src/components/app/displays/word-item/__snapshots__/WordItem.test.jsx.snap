@@ -2,27 +2,51 @@
 
 exports[`<WordItem/> should render a word item to the page 1`] = `
 <DocumentFragment>
-  <div>
-    <h1>
-      Word Item Page
-    </h1>
-    <p>
+  <div
+    class="wordItem"
+  >
+    <h4>
       Word: Word
+    </h4>
+    <p
+      class="label"
+    >
+      Language
     </p>
     <p>
-      Language: English
+       English
+    </p>
+    <p
+      class="label"
+    >
+      Translation
     </p>
     <p>
-      Translation: word translation
+       word translation
+    </p>
+    <p
+      class="label"
+    >
+      Definition
     </p>
     <p>
-      Definition: word definition
+       word definition
+    </p>
+    <p
+      class="label"
+    >
+      Example Sentence
     </p>
     <p>
-      Example Sentence: this is a cool word
+       this is a cool word
+    </p>
+    <p
+      class="label"
+    >
+      Notes
     </p>
     <p>
-      Notes: I learned a new word!
+       I learned a new word!
     </p>
   </div>
 </DocumentFragment>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getAllWords } from '../service/api-fetch'
 import WordList from '../components/app/displays/word-list/WordList'
+import styles from './WordsListContainer.css'
 
 export default class WordsListContainer extends Component {
   state = {
@@ -16,7 +17,7 @@ export default class WordsListContainer extends Component {
   render() {
     const { wordsList } = this.state
     return (
-      <div>
+      <div className={styles.wordsList}>
         {wordsList.length >= 1
           ?
           <WordList wordsList={wordsList} />

@@ -18,8 +18,8 @@ export const getAllWords = async () => {
   const res = await fetch('http://localhost:7890/api/v1/words')
 
   if (!res.ok) throw ('Failed to fetch from API')
-  
+
   const apiRes = await res.json()
-  
+
   return apiRes
 }

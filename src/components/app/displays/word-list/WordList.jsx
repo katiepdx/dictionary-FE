@@ -1,10 +1,11 @@
 import React from 'react'
 import WordItem from '../word-item/WordItem'
 import PropTypes from 'prop-types'
+import styles from './WordList.css'
 
 const WordList = ({ wordsList }) => {
   return wordsList.map(word => (
-    <div key={word.id}>
+    <div key={word.id} className={styles.wordItem}>
       <WordItem {...word} />
     </div>
   ))

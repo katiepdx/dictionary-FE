@@ -1,6 +1,6 @@
-// one word 
 import React from 'react'
 import PropTypes from 'prop-types'
+import styles from './WordItem.css'
 
 const WordItem = ({
   word,
@@ -10,14 +10,23 @@ const WordItem = ({
   exampleSentence,
   notes }) => {
   return (
-    <div>
-      <h1>Word Item Page</h1>
-      <p>Word: {word}</p>
-      <p>Language: {wordLanguage}</p>
-      <p>Translation: {wordTranslation ? wordTranslation : 'n/a'}</p>
-      <p>Definition: {wordDefinition}</p>
-      <p>Example Sentence: {exampleSentence}</p>
-      <p>Notes: {notes ? notes : 'n/a'}</p>
+    <div className={styles.wordItem}>
+      <h4>Word: {word}</h4>
+
+      <p className={styles.label}>Language</p>
+      <p> {wordLanguage}</p>
+
+      <p className={styles.label}>Translation</p>
+      <p> {wordTranslation ? wordTranslation : 'n/a'}</p>
+
+      <p className={styles.label}>Definition</p>
+      <p> {wordDefinition}</p>
+
+      <p className={styles.label}>Example Sentence</p>
+      <p> {exampleSentence}</p>
+
+      <p className={styles.label}>Notes</p>
+      <p> {notes ? notes : 'n/a'}</p>
     </div>
   )
 }
