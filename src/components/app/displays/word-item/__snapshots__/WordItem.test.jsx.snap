@@ -8,46 +8,6 @@ exports[`<WordItem/> should render a word item to the page 1`] = `
     <h4>
       Word: Word
     </h4>
-    <p
-      class="label"
-    >
-      Language
-    </p>
-    <p>
-       English
-    </p>
-    <p
-      class="label"
-    >
-      Translation
-    </p>
-    <p>
-       word translation
-    </p>
-    <p
-      class="label"
-    >
-      Definition
-    </p>
-    <p>
-       word definition
-    </p>
-    <p
-      class="label"
-    >
-      Example Sentence
-    </p>
-    <p>
-       this is a cool word
-    </p>
-    <p
-      class="label"
-    >
-      Notes
-    </p>
-    <p>
-       I learned a new word!
-    </p>
   </div>
 </DocumentFragment>
 `;
