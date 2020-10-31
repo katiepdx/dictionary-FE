@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WordDetails/> should render the word details to the page 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      WordDetailTest
+    </h1>
+    <p
+      class="label"
+    >
+      Language
+    </p>
+    <p>
+       WordDetailTest
+    </p>
+    <p
+      class="label"
+    >
+      Translation
+    </p>
+    <p>
+       WordDetailTest
+    </p>
+    <p
+      class="label"
+    >
+      Definition
+    </p>
+    <p>
+       WordDetailTest
+    </p>
+    <p
+      class="label"
+    >
+      Example Sentence
+    </p>
+    <p>
+       WordDetailTest
+    </p>
+    <p
+      class="label"
+    >
+      Notes
+    </p>
+    <p>
+       I learned a new word!
+    </p>
+  </div>
+</DocumentFragment>
+`;
