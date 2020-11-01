@@ -9,6 +9,7 @@ import styles from './App.css'
 import WordFormContainer from '../../container/WordFormContainer';
 import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
+import WordUpdateContainer from '../../container/WordUpdateContainer';
 import WordDetails from './displays/word-details/WordDetails';
 
 export default function App() {
@@ -32,6 +33,10 @@ export default function App() {
           <Route
             exact path="/words/:id"
             component={WordDetailContainer}
+          />
+          <Route
+            exact path="/words/update/:id"
+            component={WordUpdateContainer}
           />
         </Switch>
       </Router>

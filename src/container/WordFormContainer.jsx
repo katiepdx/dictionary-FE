@@ -59,8 +59,8 @@ export default class WordFormContainer extends Component {
           wordDefinition={wordDefinition}
           exampleSentence={exampleSentence}
           notes={notes}
-          onChange={this.handleChange}
-          onClick={this.handleClick} />
+          onChange={this.handleChange} />
+        <button onClick={this.handleClick}>Submit</button>
       </div>
     )
   }

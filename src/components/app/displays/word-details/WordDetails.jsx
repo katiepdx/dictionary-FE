@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './WordDetails.css'
+import { Link } from 'react-router-dom'
 
 const WordDetails = ({
+  id,
   word,
   wordLanguage,
   wordTranslation,
@@ -26,16 +28,20 @@ const WordDetails = ({
 
       <p className={styles.label}>Notes</p>
       <p> {notes ? notes : 'n/a'}</p>
+
+      <Link to={`/words/update/${id}`}><button>Update</button></Link>
     </div>
   )
 }
 
 WordDetails.propTypes = {
+  id: PropTypes.number.isRequired,
   word: PropTypes.string.isRequired,
   wordLanguage: PropTypes.string.isRequired,
   wordTranslation: PropTypes.string,
   wordDefinition: PropTypes.string.isRequired,
-  exampleSentence: PropTypes.string
+  exampleSentence: PropTypes.string.isRequired,
+  notes: PropTypes.string
 }
 
 export default WordDetails

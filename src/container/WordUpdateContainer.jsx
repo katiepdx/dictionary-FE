@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import WordDetails from '../components/app/displays/word-details/WordDetails'
-import { getWordById } from '../service/api-fetch'
+import { getWordById, updateWordById } from '../service/api-fetch'
+import WordForm from '../components/app/controls/WordForm'
 
-export default class WordDetailContainer extends Component {
+export default class WordUpdateContainer extends Component {
   state = {
     id: null,
     word: '',
@@ -29,27 +29,47 @@ export default class WordDetailContainer extends Component {
     })
   }
 
+  handleChange = (e) => {
+    e.preventDefault();
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleClick = async () => {
+    console.log(this.state.id)
+    await updateWordById(this.state.id, {
+      word: this.state.word,
+      wordLanguage: this.state.wordLanguage,
+      wordTranslation: this.state.wordTranslation,
+      wordDefinition: this.state.wordDefinition,
+      exampleSentence: this.state.exampleSentence,
+      notes: this.state.notes
+    })
+
+    alert('Update complete!')
+  }
+
   render() {
     const {
-      id,
       word,
       wordLanguage,
       wordTranslation,
       wordDefinition,
       exampleSentence,
       notes } = this.state
-
     return (
       <div>
-        <WordDetails
-          id={id}
+        <WordForm
           word={word}
           wordLanguage={wordLanguage}
           wordTranslation={wordTranslation}
           wordDefinition={wordDefinition}
           exampleSentence={exampleSentence}
-          notes={notes} />
+          notes={notes}
+          onChange={this.handleChange}
+        />
+        <button onClick={this.handleClick} >Update word</button>
       </div>
     )
   }
+
 }
