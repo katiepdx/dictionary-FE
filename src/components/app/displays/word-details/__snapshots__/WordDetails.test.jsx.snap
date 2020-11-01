@@ -46,6 +46,13 @@ exports[`<WordDetails/> should render the word details to the page 1`] = `
     <p>
        I learned a new word!
     </p>
+    <a
+      href="/words/update/5"
+    >
+      <button>
+        Update
+      </button>
+    </a>
   </div>
 </DocumentFragment>
 `;
