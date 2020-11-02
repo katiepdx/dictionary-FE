@@ -1,22 +1,18 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import { deleteWordById } from '../service/api-fetch'
 
-export default class WordDeleteContainer extends Component {
-  state = {
-    delete: false
-  }
-  async componentDidMount() {
-    const id = this.props.match.params.id
+export default function WordDeleteContainer() {
+  const [deleteWord, setDeleteWord] = useState(false)
+  const { id } = useParams()
 
+  useEffect(async () => {
     await deleteWordById(id);
-
-    await this.setState({ delete: true })
-  }
-  render() {
-    return (
-      <div>
-        {this.state.delete ? <h1>Delete complete!</h1> : <h1>Failed to delete...</h1>}
-      </div>
-    )
-  }
+    await setDeleteWord(true)
+  }, [])
+  return (
+    <div>
+      {deleteWord === true ? <h1>Delete complete!</h1> : <h1>Failed to delete...</h1>}
+    </div>
+  )
 }
