@@ -35,7 +35,6 @@ export default class WordUpdateContainer extends Component {
   }
 
   handleClick = async () => {
-    console.log(this.state.id)
     await updateWordById(this.state.id, {
       word: this.state.word,
       wordLanguage: this.state.wordLanguage,
@@ -68,6 +67,7 @@ export default class WordUpdateContainer extends Component {
           onChange={this.handleChange}
         />
         <button onClick={this.handleClick} >Update word</button>
+        
       </div>
     )
   }

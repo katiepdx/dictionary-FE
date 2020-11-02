@@ -48,3 +48,15 @@ export const updateWordById = async (id, word) => {
   return apiRes
 }
 
+export const deleteWordById = async (id) => {
+  const res = await fetch(`http://localhost:7890/api/v1/words/${id}`, {
+    method: "DELETE",
+    headers: { "Content-type": "application/json; charset=UTF-8" }
+  })
+
+  if (!res.ok) throw ('Failed to fetch from API')
+
+  const apiRes = await res.json()
+
+  return apiRes
+}

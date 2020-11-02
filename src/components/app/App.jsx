@@ -10,6 +10,7 @@ import WordFormContainer from '../../container/WordFormContainer';
 import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
 import WordUpdateContainer from '../../container/WordUpdateContainer';
+import WordDeleteContainer from '../../container/WordDeleteContainer';
 import WordDetails from './displays/word-details/WordDetails';
 
 export default function App() {
@@ -37,6 +38,10 @@ export default function App() {
           <Route
             exact path="/words/update/:id"
             component={WordUpdateContainer}
+          />
+          <Route
+            exact path="/words/delete/:id"
+            component={WordDeleteContainer}
           />
         </Switch>
       </Router>

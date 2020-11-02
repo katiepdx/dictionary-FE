@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import WordDetails from '../components/app/displays/word-details/WordDetails'
-import { getWordById } from '../service/api-fetch'
+import { getWordById, deleteWordById } from '../service/api-fetch'
 
 export default class WordDetailContainer extends Component {
   state = {
@@ -15,11 +15,10 @@ export default class WordDetailContainer extends Component {
 
   async componentDidMount() {
     const id = this.props.match.params.id
-
     const response = await getWordById(id)
-
+    console.log(id)
     this.setState({
-      id: response.id,
+      id: id,
       word: response.word,
       wordLanguage: response.wordLanguage,
       wordTranslation: response.wordTranslation,
@@ -27,6 +26,10 @@ export default class WordDetailContainer extends Component {
       exampleSentence: response.exampleSentence,
       notes: response.notes
     })
+  }
+
+  async handleDeleteClick() {
+    console.log(this.state.id, 'delete word by id')
   }
 
   render() {

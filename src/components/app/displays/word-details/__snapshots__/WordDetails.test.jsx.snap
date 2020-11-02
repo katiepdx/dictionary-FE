@@ -53,6 +53,13 @@ exports[`<WordDetails/> should render the word details to the page 1`] = `
         Update
       </button>
     </a>
+    <a
+      href="/words/delete/5"
+    >
+      <button>
+        Delete
+      </button>
+    </a>
   </div>
 </DocumentFragment>
 `;

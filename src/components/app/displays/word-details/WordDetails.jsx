@@ -30,6 +30,7 @@ const WordDetails = ({
       <p> {notes ? notes : 'n/a'}</p>
 
       <Link to={`/words/update/${id}`}><button>Update</button></Link>
+      <Link to={`/words/delete/${id}`}><button>Delete</button></Link>
     </div>
   )
 }
