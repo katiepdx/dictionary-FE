@@ -22,7 +22,9 @@ exports[`App component renders App 1`] = `
       </a>
     </li>
   </nav>
-  <div>
+  <div
+    class="formContainer"
+  >
     <h1>
       Word Container
     </h1>

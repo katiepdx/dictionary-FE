@@ -28,10 +28,6 @@ export default class WordDetailContainer extends Component {
     })
   }
 
-  async handleDeleteClick() {
-    console.log(this.state.id, 'delete word by id')
-  }
-
   render() {
     const {
       id,
