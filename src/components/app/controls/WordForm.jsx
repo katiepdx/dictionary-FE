@@ -9,8 +9,7 @@ const WordForm = ({
   wordDefinition,
   exampleSentence,
   notes,
-  onChange,
-  onClick }) => {
+  onChange }) => {
   return (
     <div className={styles.formPage}>
       <section className={styles.wordForm}>
@@ -68,7 +67,6 @@ const WordForm = ({
           value={notes}
           onChange={onChange}
         />
-        <button onClick={onClick}>Submit</button>
       </section>
     </div>
   )

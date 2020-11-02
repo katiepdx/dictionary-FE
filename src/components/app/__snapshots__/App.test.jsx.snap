@@ -100,11 +100,11 @@ exports[`App component renders App 1`] = `
           name="notes"
           type="text"
         />
-        <button>
-          Submit
-        </button>
       </section>
     </div>
+    <button>
+      Submit
+    </button>
   </div>
 </DocumentFragment>
 `;
