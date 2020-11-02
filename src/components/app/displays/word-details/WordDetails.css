@@ -1,3 +1,8 @@
 .label {
   background-color: rgba(216, 179, 136, 0.294);
 }
+
+.details {
+  display: grid;
+  grid-template-columns: 5vw 1fr 5vw;
+}

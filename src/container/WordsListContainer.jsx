@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { getAllWords } from '../service/api-fetch'
 import WordList from '../components/app/displays/word-list/WordList'
-import styles from './WordsListContainer.css'
+import styles from './Container.css'
 
 export default class WordsListContainer extends Component {
   state = {
@@ -19,10 +19,10 @@ export default class WordsListContainer extends Component {
     return (
       <div>
         <h1>My Word List</h1>
-        <section className={styles.wordsList}>
+        <section>
           {wordsList.length >= 1
             ?
-            <div data-testid="word-list">
+            <div className={styles.wordsList} data-testid="word-list">
               <WordList wordsList={wordsList} />
             </div>
             :

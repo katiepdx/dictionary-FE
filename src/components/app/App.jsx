@@ -11,7 +11,6 @@ import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
 import WordUpdateContainer from '../../container/WordUpdateContainer';
 import WordDeleteContainer from '../../container/WordDeleteContainer';
-import WordDetails from './displays/word-details/WordDetails';
 
 export default function App() {
   return (

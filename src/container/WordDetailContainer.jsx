@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import WordDetails from '../components/app/displays/word-details/WordDetails'
-import { getWordById, deleteWordById } from '../service/api-fetch'
+import { getWordById } from '../service/api-fetch'
 
 export default class WordDetailContainer extends Component {
   state = {

@@ -1,6 +1,0 @@
-.wordsList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-  padding: 2rem;
-}

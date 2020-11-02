@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import WordForm from '../components/app/controls/WordForm'
 import { createWord } from '../service/api-fetch';
+import styles from './Container.css'
 
 export default class WordFormContainer extends Component {
   state = {
@@ -50,7 +51,7 @@ export default class WordFormContainer extends Component {
     } = this.state
 
     return (
-      <div>
+      <div className={styles.formContainer}>
         <h1>Word Container</h1>
         <WordForm
           word={word}

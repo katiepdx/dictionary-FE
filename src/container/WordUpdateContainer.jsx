@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getWordById, updateWordById } from '../service/api-fetch'
 import WordForm from '../components/app/controls/WordForm'
+import styles from './Container.css'
 
 export default class WordUpdateContainer extends Component {
   state = {
@@ -56,7 +57,7 @@ export default class WordUpdateContainer extends Component {
       exampleSentence,
       notes } = this.state
     return (
-      <div>
+      <div className={styles.updateContainer}>
         <WordForm
           word={word}
           wordLanguage={wordLanguage}
@@ -67,7 +68,7 @@ export default class WordUpdateContainer extends Component {
           onChange={this.handleChange}
         />
         <button onClick={this.handleClick} >Update word</button>
-        
+
       </div>
     )
   }
