@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WordForm/> should render add a word form to the page 1`] = `
+<DocumentFragment>
+  <div
+    class="formPage"
+  >
+    <section
+      class="wordForm"
+    >
+      <h2>
+        Add a word!
+      </h2>
+      <label
+        for="word"
+      >
+        Word
+      </label>
+      <input
+        id="word"
+        name="word"
+        type="text"
+        value="word WordForm test"
+      />
+      <label
+        for="wordLanguage"
+      >
+        word language
+      </label>
+      <input
+        id="wordLanguage"
+        name="wordLanguage"
+        type="text"
+        value="wordLanguage WordForm test"
+      />
+      <label
+        for="wordTranslation"
+      >
+        word translation
+      </label>
+      <input
+        id="wordTranslation"
+        name="wordTranslation"
+        type="text"
+        value="wordTranslation WordForm test"
+      />
+      <label
+        for="wordDefinition"
+      >
+        word definition
+      </label>
+      <input
+        id="wordDefinition"
+        name="wordDefinition"
+        type="text"
+        value="wordDefinition WordForm test"
+      />
+      <label
+        for="exampleSentence"
+      >
+        example sentence
+      </label>
+      <input
+        id="exampleSentence"
+        name="exampleSentence"
+        type="text"
+        value="exampleSentence WordForm test"
+      />
+      <label
+        for="notes"
+      >
+        notes
+      </label>
+      <textarea
+        id="notes"
+        name="notes"
+        type="text"
+      >
+        notes I learned a new word!
+      </textarea>
+    </section>
+  </div>
+</DocumentFragment>
+`;

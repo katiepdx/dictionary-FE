@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WordItem/> should render a word item to the page 1`] = `
+<DocumentFragment>
+  <div
+    class="wordItem"
+  >
+    <h4>
+      Word: WordItemTest
+    </h4>
+  </div>
+</DocumentFragment>
+`;

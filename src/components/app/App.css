@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: rgb(36, 36, 22);
+  font-size: 2rem;
+  padding: 1.7rem 1.2rem;
+}
+
+.links {
+  color: wheat;
+  text-decoration: none;
+}
+
+.links:hover {
+  background-color: whitesmoke;
+  padding: 1.7rem 1.2rem;
+  transition: .6s;
+  color: rgba(36, 36, 22, 0.74);
+}
+
+h1 {
+ text-align: center;
+}

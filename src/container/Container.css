@@ -1,0 +1,18 @@
+.wordsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  padding: 2rem;
+}
+
+.formContainer, .updateContainer {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 150px;
+  margin: 1.2rem;
+}
