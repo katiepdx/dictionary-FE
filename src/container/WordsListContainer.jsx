@@ -22,7 +22,9 @@ export default class WordsListContainer extends Component {
         <section className={styles.wordsList}>
           {wordsList.length >= 1
             ?
-            <WordList wordsList={wordsList} />
+            <div data-testid="word-list">
+              <WordList wordsList={wordsList} />
+            </div>
             :
             <h1>Oops! Please add a word to your list first....</h1>}
         </section>
