@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import WordDetails from './WordDetails'
 import { MemoryRouter } from 'react-router-dom'
+import WordDetails from './WordDetails'
 
 describe('<WordDetails/>', () => {
   it('should render the word details to the page', () => {

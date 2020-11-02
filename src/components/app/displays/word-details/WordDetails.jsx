@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './WordDetails.css'
 import { Link } from 'react-router-dom'
+import styles from './WordDetails.css'
 
 const WordDetails = ({
   id,

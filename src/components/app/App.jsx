@@ -5,12 +5,12 @@ import {
   Link,
   Switch
 } from 'react-router-dom'
-import styles from './App.css'
 import WordFormContainer from '../../container/WordFormContainer';
 import WordsListContainer from '../../container/WordsListContainer';
 import WordDetailContainer from '../../container/WordDetailContainer';
 import WordUpdateContainer from '../../container/WordUpdateContainer';
 import WordDeleteContainer from '../../container/WordDeleteContainer';
+import styles from './App.css'
 
 export default function App() {
   return (

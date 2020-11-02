@@ -1,5 +1,3 @@
-// createWord, getAllWords, getWordById, updateWordById, deleteWordById
-
 export const createWord = async (word) => {
   const res = await fetch('http://localhost:7890/api/v1/words', {
     method: "POST",

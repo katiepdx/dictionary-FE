@@ -68,9 +68,7 @@ export default class WordUpdateContainer extends Component {
           onChange={this.handleChange}
         />
         <button onClick={this.handleClick} >Update word</button>
-
       </div>
     )
   }
-
 }

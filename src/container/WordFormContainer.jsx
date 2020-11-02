@@ -19,8 +19,7 @@ export default class WordFormContainer extends Component {
   }
 
   handleClick = async () => {
-    // POST req
-    const apiRes = await createWord({
+   await createWord({
       word: this.state.word,
       wordLanguage: this.state.wordLanguage,
       wordTranslation: this.state.wordTranslation,
@@ -29,7 +28,6 @@ export default class WordFormContainer extends Component {
       notes: this.state.notes
     })
 
-    // reset state - clear form
     this.setState({
       word: '',
       wordLanguage: '',
